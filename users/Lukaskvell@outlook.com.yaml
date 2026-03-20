@@ -1,0 +1,8 @@
+name: Lukas
+super: true
+id: f5317697-61cc-4248-be1d-91ff984432b3
+password_hash: $2y$12$YIRYdxmpcbJc6AwI9Pn5veFw9/CjI3xdyvcsPNuTpACg2FRvq2uty
+preferences:
+  collections:
+    pages:
+      view: tree

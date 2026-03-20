@@ -1,0 +1,64 @@
+title: 'Page builder'
+fields:
+  -
+    handle: builder_content
+    field:
+      type: replicator
+      display: 'Page builder'
+      sets:
+        forside:
+          display: Forside
+          icon: page
+          sets:
+            builder_content:
+              display: 'Builder content'
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+            article_card:
+              display: 'Article card'
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: background_image
+                  field:
+                    container: assets
+                    type: assets
+                    display: Background_image
+                    max_files: 1
+                -
+                  handle: child_url
+                  field:
+                    type: link
+                    display: child_url
+                -
+                  handle: category
+                  field:
+                    type: terms
+                    display: Kategori
+        jobbikoner:
+          display: Jobbikoner
+          icon: building-generic
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: icon
+                  field:
+                    container: assets
+                    type: assets
+                    display: Ikon
+                    max_files: 1
+                -
+                  handle: job_name
+                  field:
+                    type: text
+                    display: Stillingsnavn
