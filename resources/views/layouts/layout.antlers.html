@@ -9,8 +9,22 @@
     </head>
     <body class="bg-zinc-100 font-sans leading-normal">
         <div class="w-full">
-            {{ partial:navbar }} {{ hero }} {{ partial:page_builder{{type}} }}
-            {{ /hero }} {{ template_content }}
+        <nav>{{partial:navbar}}</nav>
+
+        <main>{{ yield:content }}</main>
+
+        <footer>{{ partial:footer }}</footer>
         </div>
+    </body>
+</html>
+<!doctype html>
+<html lang="{{ site:short_locale }}">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{{ title }} – Jobb med vann</title>
+        {{ vite src="resources/js/app.js" }}
+    </head>
+    <body class="bg-sky-50">
+
     </body>
 </html>

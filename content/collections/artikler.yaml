@@ -1,0 +1,14 @@
+title: Artikler
+icon: collections
+template: default
+layout: layout
+revisions: false
+route: "/articles/{slug}"
+sort_dir: asc
+date_behavior:
+  past: null
+  future: null
+preview_targets:
+  - label: Entry
+    url: "{permalink}"
+    refresh: true

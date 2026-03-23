@@ -1,0 +1,60 @@
+title: Stillinger
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Tittel
+              instructions: Stillingsnavn
+          -
+            handle: icon
+            field:
+              container: assets
+              max_files: 1
+              type: assets
+              display: Ikon
+              instructions: 'SVG ikon eller bilde som skal vises på forsiden'
+          -
+            handle: category
+            field:
+              type: terms
+              display: Kategori
+          -
+            handle: body
+            field:
+              type: markdown
+              display: Brødtekst
+          -
+            handle: ingress
+            field:
+              type: textarea
+              display: Ingress
+          -
+            handle: typisk_utdanning
+            field:
+              type: markdown
+              display: 'Typisk utdanning'
+          -
+            handle: hvor_jobber_de
+            field:
+              type: markdown
+              display: 'Hvor jobber de'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

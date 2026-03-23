@@ -1,0 +1,15 @@
+title: Stillinger
+icon: collections
+template: layouts/layout
+layout: layout
+revisions: false
+route: '/stillinger/{slug}'
+sort_dir: asc
+date_behavior:
+  past: null
+  future: null
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

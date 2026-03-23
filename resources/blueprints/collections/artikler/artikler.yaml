@@ -1,0 +1,50 @@
+title: Artikler
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: content
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: hero_image
+            field:
+              container: assets
+              max_files: 1
+              type: assets
+              display: 'Hero bilde'
+          -
+            handle: ingress
+            field:
+              type: textarea
+              display: Ingress
+          -
+            handle: content
+            field:
+              container: assets
+              remove_empty_nodes: false
+              type: bard
+              display: Innhold
+          -
+            handle: date
+            field:
+              type: date
+              display: Dato
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

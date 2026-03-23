@@ -1,4 +1,40 @@
-<section class="flex w-full mt-4 p-8">
-    {{ builder_content }} {{ partial:page_builder/{{type}} }} {{
-    /builder_content }}
-</section>
+{{ extends src="layouts/layout" }} 
+{{ section:content }}
+<div class="grid grid-cols-4 md:grid-cols-5 gap-4 max-w-4xl my-4 mx-auto">
+    {{ collection:stillinger sort_by="title" }}
+        <a href="{{ url }}" class="flex flex-col h-40 justify-around items-center gap-2 p-4 border border-black rounded-full text-center group">
+            {{ if icon }}
+                <img src="{{ icon }}" alt="{{ title }}" class="w-10 h-10">
+            {{ /if }}
+            <p class="text-xs font-medium text-gray-700 leading-tight group-hover:text-blue-400 transition">{{ title }}</p>
+        </a>
+    {{ /collection:stillinger }}
+</div>
+
+
+{{ collection:artikler sort_by="date" order="desc" limit="3" status="published"
+}}
+<a
+    href="{{ url }}"
+    class="group block bg-white rounded-2xl overflow-hidden hover:shadow-md transition"
+>
+    {{ if hero_image }}
+    <img
+        src="{{ hero_image }}"
+        alt="{{ title }}"
+        class="w-full h-48 object-cover"
+    />
+    {{ /if }}
+
+    <div class="p-5">
+        <p class="text-xs text-gray-400 mb-1">{{ date format="d. M Y" }}</p>
+        <h2
+            class="font-semibold text-gray-900 group-hover:text-teal-600 transition"
+        >
+            {{ title }}
+        </h2>
+        <p class="text-sm text-gray-500 mt-1 line-clamp-2">{{ ingress }}</p>
+    </div>
+</a>
+{{ /collection:artikler }}
+{{ /section:content }}

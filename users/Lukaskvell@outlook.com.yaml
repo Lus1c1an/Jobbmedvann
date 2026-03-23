@@ -6,3 +6,7 @@ preferences:
   collections:
     pages:
       view: tree
+    artikler:
+      view: list
+    stillinger:
+      view: list

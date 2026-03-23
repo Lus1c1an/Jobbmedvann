@@ -1,0 +1,18 @@
+{{ extends src="layouts/layout" }} 
+{{ section:content }}
+<article class="max-w-2xl mx-auto px-4 py-16">
+    {{ if hero_image }}
+    <img
+        src="{{ hero_image }}"
+        alt="{{ title }}"
+        class="w-full rounded-2xl mb-8 object-cover max-h-96"
+    />
+    {{ /if }}
+
+    <p class="text-sm text-gray-400 mb-2">{{ date format="d. M Y" }}</p>
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">{{ title }}</h1>
+    <p class="text-lg text-gray-500 mb-8">{{ ingress }}</p>
+
+    <div class="prose prose-lg">{{ content }}</div>
+</article>
+{{ /section:content }}

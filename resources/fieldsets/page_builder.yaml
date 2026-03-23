@@ -31,24 +31,39 @@ fields:
                   field:
                     container: assets
                     type: assets
-                    display: Background_image
+                    display: 'Background image'
                     max_files: 1
                 -
                   handle: child_url
                   field:
                     type: link
                     display: child_url
+            hero_card:
+              display: 'Hero card'
+              fields:
                 -
-                  handle: category
+                  handle: title
                   field:
-                    type: terms
-                    display: Kategori
+                    type: text
+                    display: Title
+                -
+                  handle: background_image
+                  field:
+                    container: assets
+                    type: assets
+                    display: 'Background image'
+                    max_files: 1
+                -
+                  handle: child_url
+                  field:
+                    type: link
+                    display: 'Child url'
         jobbikoner:
           display: Jobbikoner
           icon: building-generic
           sets:
-            new_set:
-              display: 'New Set'
+            icons:
+              display: icons
               fields:
                 -
                   handle: icon
@@ -62,3 +77,8 @@ fields:
                   field:
                     type: text
                     display: Stillingsnavn
+                -
+                  handle: url
+                  field:
+                    type: link
+                    display: url
