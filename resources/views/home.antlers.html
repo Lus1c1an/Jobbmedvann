@@ -18,10 +18,11 @@
 {{# --Artikler------------------------------------------------------------------------------------------------------------------------ #}}
 <section class="grid justify-items-center">
     {{ collection:artikler sort_by="date" order="desc" limit="3" status="published" }}
-    <div class="relative rounded-2xl">
-        <a href="{{ url }}">
+    <div class="relative">
+        <a class="rounded-2xl" href="{{ url }}">
             {{ if hero_image }}
                 <img
+                    class="rounded-2xl"
                     src="{{ hero_image }}"
                     alt="{{ title }}"
                 />
@@ -32,12 +33,29 @@
                 <h2> {{ title }} </h2>
             </div>
         </a>  
-        <div class="absolute top-0 bottom-0 h-full opacity-0 w-full hover:opacity-100 transition">
+        {{#
+        <div class="absolute top-0 bottom-0 h-full bg-[#b2b2b236] opacity-0 w-full hover:opacity-100 transition">
             <p>{{ ingress }}</p>
         </div>
+        #}}
     </div>
     {{ /collection:artikler }}
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

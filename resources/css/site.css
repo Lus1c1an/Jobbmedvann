@@ -11,4 +11,44 @@
     --color-quinary: #c0ffa9;
     --color-text: #00252d;
     --color-background: #f3feff;
+
+    --font-haffer-sq:  "HafferSQXH", sans-serif;
+    --font-haffer:     "Haffer", sans-serif;
+    --font-inter:      "Inter", sans-serif;
+    --font-arial:      "Arial", sans-serif;
+}
+
+@font-face {
+  font-family: 'HafferSQXH';
+  src: url('/fonts/HafferSQXH-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'HafferSQXH';
+  src: url('/fonts/HafferSQXH-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Haffer';
+  src: url('/fonts/Haffer-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-VariableFont_opsz_wght.ttf') format('truetype');
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: 'Arial';
+  src: url('/fonts/Arial.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Arial';
+  src: url('/fonts/Arial_Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@theme {
+
 }
