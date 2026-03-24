@@ -7,7 +7,7 @@
         <title>{{ title ?? site:name }}</title>
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
     </head>
-    <body class="bg-zinc-100 font-sans leading-normal">
+    <body class="bg-zinc-100 font-sans leading-normal flex justify-center">
         <div class="w-full">
         <nav>{{partial:navbar}}</nav>
 
@@ -24,7 +24,7 @@
         <title>{{ title }} – Jobb med vann</title>
         {{ vite src="resources/js/app.js" }}
     </head>
-    <body class="bg-sky-50">
+    <body class="bg-background">
 
     </body>
 </html>

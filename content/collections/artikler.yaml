@@ -1,14 +1,15 @@
 title: Artikler
 icon: collections
-template: default
-layout: layout
+template: collections/artikler/show
+layout: layouts/layout
 revisions: false
-route: "/articles/{slug}"
+route: '/articles/{slug}'
 sort_dir: asc
 date_behavior:
   past: null
   future: null
 preview_targets:
-  - label: Entry
-    url: "{permalink}"
+  -
+    label: Entry
+    url: '{permalink}'
     refresh: true

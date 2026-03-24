@@ -2,3 +2,13 @@
 @plugin "@tailwindcss/typography";
 @source "../views";
 @source "../../content";
+
+@theme {
+    --color-primary: #ffffff;
+    --color-secondary: #e1fcff;
+    --color-tertiary: #001316;
+    --color-quaternary: #abb1ff;
+    --color-quinary: #c0ffa9;
+    --color-text: #00252d;
+    --color-background: #f3feff;
+}
